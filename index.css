@@ -1,0 +1,159 @@
+.Project_Container {
+    margin-right: 50px;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    -webkit-column-break-inside: avoid;
+    margin-right: clamp(40px, 6vw, 80px);
+    white-space: normal;
+    flex-grow: 1;
+    margin-bottom: 10vh;
+}
+.categories {
+    display: inline-flex;
+    flex-flow: wrap;
+}
+
+h1 {
+    font-family: "Inter Black", Serif;
+    font-size: 26px;
+}
+
+h3 {
+    font-family: "Inter SemiBold", Serif;
+    font-size: 24px;
+}
+
+h4 {
+    font-family: "Inter Medium", Serif;
+    font-size: 22px;
+}
+
+section {
+    display: inline-block;
+}
+
+.hiden {
+    background-color: black;
+    display: none;
+}
+
+form {
+    position: relative;
+    margin: inherit;
+}
+
+input {
+    font-size: 22px;
+    font-family: "Inter Light", Serif;
+    width: auto; /*20vw;*/
+    height: 50px;
+    padding: 20px;
+}
+.submit {
+    width: auto;
+    position: relative;
+}
+
+button, .categories a {
+    text-align: center;
+    padding: 13px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 24px;
+    border: black 1px solid;
+    height: 50px;
+    width: 100px;
+    font-family: "Inter SemiBold";
+    font-size: medium;
+}
+
+.orderBy a{
+    text-align: center;
+    padding-top: 6px;
+    margin: 24px 0 5px 0;
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    font-family: "Inter SemiBold";
+    font-size: medium;
+}
+.orderBy h3 {
+    margin-right: 20px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.categories {
+    display: flex
+}
+.categories h3{
+    margin-right: 0;
+}
+
+@media screen and (min-width: 600px) {
+    div { /* div*/
+        column-count: 4;
+        margin-right: 20px;
+        flex-grow: 1;
+        flex-basis: calc(100vw / 7);
+        margin-bottom: calc(100vh / 20);
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (min-width:414px) and (max-width: 600px) {
+    div {
+        column-count: 2;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    div {
+        column-count: 1;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .card {
+        margin-bottom: 10vh;
+    }
+}
